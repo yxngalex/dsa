@@ -5,6 +5,8 @@
     Insert O(n): One by one, find index and insert
     Delete O(n): Find the item
 '''
+from traceback import print_list
+
 
 class Node:
     def __init__(self, value):
@@ -132,6 +134,25 @@ class DoublyLinkedList():
         print("Index out of bounds")
         return self.print_list()
 
+    # Reverse tail and head using previous
+    # O(N)
+    def reverse(self):
+        if not self.head.next:
+            return self.head
+
+        first = self.head
+        self.tail = self.head
+        second = self.head.next
+
+        while second:
+            tmp = second.next
+            second.next = first
+            first = second
+            second = tmp
+
+        self.head.next = None
+        self.head = first
+        return self.print_list()
 
 def main():
     cll = DoublyLinkedList(10)
@@ -141,10 +162,11 @@ def main():
     cll.prepend(2)
     print(cll.print_list())
     print(cll.size())
-    print(cll.insert(99, 13))
-    print(cll.print_list())
-    print(cll.delete(4))
-    print(cll.size())
+    print(cll.insert(99, 88))
+    # print(cll.print_list())
+    # print(cll.delete(4))
+    # print(cll.size())
+    print(cll.reverse())
 
 
 if __name__ == '__main__':
