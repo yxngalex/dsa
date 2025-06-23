@@ -5,7 +5,6 @@
     Insert O(n): One by one, find index and insert
     Delete O(n): Find the item
 '''
-from traceback import print_list
 
 
 class Node:
