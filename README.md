@@ -62,7 +62,6 @@ Covers operations like:
 Includes implementations of:
 - Singly Linked List
 - Doubly Linked List
-- Circular Linked List
 
 Covers operations like insertion, deletion, search, and reversal.
 
@@ -72,6 +71,7 @@ Covers operations like insertion, deletion, search, and reversal.
 
 Stack and queue implementations using:
 - Python lists
+- Linked lists
 - `collections.deque`
 - Priority Queue using `heapq`
 

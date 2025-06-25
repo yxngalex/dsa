@@ -51,9 +51,6 @@ class CustomMap():
                     result.append(self.data[i][0])
         return result
 
-
-
-
 if __name__ == "__main__":
     map = CustomMap(50)
     map.set("grapes", 10000)

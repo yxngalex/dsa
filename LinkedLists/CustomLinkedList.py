@@ -15,7 +15,7 @@ class Node:
         self.next = None
 
 
-class CustomLinkedList():
+class LinkedList():
     def __init__(self, value):
         self.head = Node(value)
         self.tail = self.head
@@ -107,7 +107,7 @@ class CustomLinkedList():
 
 
 def main():
-    cll = CustomLinkedList(10)
+    cll = LinkedList(10)
     cll.append(5)
     cll.append(16)
     cll.prepend(2)

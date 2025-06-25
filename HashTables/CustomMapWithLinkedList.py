@@ -1,4 +1,4 @@
-from LinkedLists.CustomLinkedList import CustomLinkedList
+from LinkedLists.CustomLinkedList import LinkedList
 
 
 class CustomMap():
@@ -17,7 +17,7 @@ class CustomMap():
     def set(self, key, value):
         address = self._hash(key)
         if not self.data[address]:
-            self.data[address] = CustomLinkedList([key, value])
+            self.data[address] = LinkedList([key, value])
         else:
             self.data[address].append([key, value])
         return self.data
