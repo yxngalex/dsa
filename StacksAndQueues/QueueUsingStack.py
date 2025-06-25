@@ -28,7 +28,7 @@ class StackQueue():
 
 
 if __name__ == '__main__':
-    q = Queue()
+    q = StackQueue()
     print("peek 1, ", q.peek())
     q.enqueue("Joy")
     q.enqueue("Matt")
