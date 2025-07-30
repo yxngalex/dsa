@@ -230,11 +230,19 @@ A **Trie** is a tree-like data structure used to store a dynamic set of strings,
 
 Graph implementations using adjacency lists and matrices.
 
-Algorithms:
+### Types of Graphs
 
-- BFS and DFS
-- Dijkstra’s Algorithm
-- Kruskal and Prim (MST)
+- Directed
+- Undirected
+- Weighted
+- Unweighted
+- Cyclic
+- Acyclic
+
+### Ways of building a graph
+- Edge list
+- Adjacent list
+- Adjacent matrix
 
 ---
 
