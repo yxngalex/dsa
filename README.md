@@ -250,10 +250,13 @@ Graph implementations using adjacency lists and matrices.
 
 Examples:
 
-- Tower of Hanoi
-- Permutations and combinations
-- N-Queens problem
-
+- Factorial
+- Fibonacci
+ 
+### 3 rules of building a recursion
+1. Identifying the base case
+2. Identifying the recursive case
+3. Returning the value
 ---
 
 ## Sorting Algorithms
