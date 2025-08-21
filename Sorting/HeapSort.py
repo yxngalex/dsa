@@ -1,4 +1,4 @@
-def heap_sort(array):  # O(n log n) on avg
+def heap_sort(array):  # O(n log n) on best, avg, worst
     n = len(array)
 
     for i in range(n // 2 - 1, -1, -1):
