@@ -163,8 +163,8 @@ They are commonly implemented using arrays, taking advantage of the index relati
 
 ### Priority Queues
 
-
-A **Priority Queue** is an abstract data structure where each element has a "priority". Elements are served based on their priority rather than just their order in the queue.
+A **Priority Queue** is an abstract data structure where each element has a "priority". Elements are served based on
+their priority rather than just their order in the queue.
 
 #### Characteristics
 
@@ -174,8 +174,8 @@ A **Priority Queue** is an abstract data structure where each element has a "pri
 #### Implementations
 
 - **Binary Heaps** are the most efficient and commonly used way to implement priority queues.
-  - Max-Heaps → for highest-priority first.
-  - Min-Heaps → for lowest-priority first.
+    - Max-Heaps → for highest-priority first.
+    - Min-Heaps → for lowest-priority first.
 
 #### Operations
 
@@ -193,16 +193,17 @@ A **Priority Queue** is an abstract data structure where each element has a "pri
 
 Trie (Prefix Tree)
 
-A **Trie** is a tree-like data structure used to store a dynamic set of strings, where keys are usually strings. It is especially efficient for string-related operations like prefix matching or autocomplete.
+A **Trie** is a tree-like data structure used to store a dynamic set of strings, where keys are usually strings. It is
+especially efficient for string-related operations like prefix matching or autocomplete.
 
 ### Characteristics
 
 - Each node represents a single character of a string.
 - The root node is empty and paths from root to leaf represent words.
 - Nodes may store:
-  - A character (implicitly via position)
-  - A flag indicating the end of a word (`is_end_of_word`)
-  - Optionally, a count or value (e.g., frequency)
+    - A character (implicitly via position)
+    - A flag indicating the end of a word (`is_end_of_word`)
+    - Optionally, a count or value (e.g., frequency)
 
 ### Operations
 
@@ -240,6 +241,7 @@ Graph implementations using adjacency lists and matrices.
 - Acyclic
 
 ### Ways of building a graph
+
 - Edge list
 - Adjacent list
 - Adjacent matrix
@@ -252,11 +254,13 @@ Examples:
 
 - Factorial
 - Fibonacci
- 
+
 ### 3 rules of building a recursion
+
 1. Identifying the base case
 2. Identifying the recursive case
 3. Returning the value
+
 ---
 
 ## Sorting Algorithms
@@ -265,9 +269,20 @@ Includes:
 
 - Bubble Sort
 - Insertion Sort
+- Selection Sort
 - Merge Sort
 - Quick Sort
 - Heap Sort
+
+
+Different sorting algorithms shine in different situations, some are faster on average, while others use less memory or
+are easier to implement.  
+
+To see how each of the most used sorting algorithms works with animations, [click here](https://www.toptal.com/developers/sorting-algorithms).
+
+Check out the table below to compare their time and space complexities.
+
+![Sorting Algorithms Big O Graph](images/sorting_complexity.jpg)
 
 ---
 
