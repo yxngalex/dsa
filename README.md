@@ -5,7 +5,7 @@ Python.
 
 This project is built as a study aid, interview preparation tool, and personal reference.
 
-To check how the implementation works of each Data Structure, open a Custom(Structure).py to view the code.
+To check how the implementation works of each data structure, open a Custom(Structure).py to view the code.
 
 ---
 
@@ -42,50 +42,122 @@ Below are visual resources to help illustrate this concept:
 
 ## Arrays
 
-Covers fundamental array operations:
+Collections of elements in contiguous memory allowing fast access by index.
+Commonly used in numerical computations, static datasets, as building blocks for other data structures, and as buffers
+in I/O
+operations.
+
+### Types:
+
+- **Static Arrays** - fixed size, memory allocated at compile time (or creation). Fast access, memory-efficient, but
+  cannot grow beyond initial size.
+- **Dynamic Arrays** - can grow or shrink during runtime (e.g., Python lists, Java ArrayList). More flexible but may
+  require resizing, which can be costly.
+
+### Concepts:
+
+- Accessing elements by index is O(1).
+- Insertion/deletion in the middle requires shifting elements → O(n).
+- Dynamic arrays resize by allocating new memory and copying elements, usually doubling the size when capacity is
+  exceeded.
+- Can be used as a building block for more complex structures like stacks, queues, and heaps.
+
+### Operations:
 
 - Insertion and deletion
 - Searching and sorting
 - Rotation and reversal
 
+**Tips/Pitfalls**
+
+- Use static arrays when size is known and memory efficiency matters.
+- Dynamic arrays are flexible but resizing can be expensive.
+- Inserting or deleting in the middle is slower than at the ends.
+
 ---
 
 ## Hash Tables
 
-Includes implementations of:
+Data structures storing key-value pairs using a hash function to map keys to positions.
+Commonly used in caches, dictionaries, symbol tables, and fast lookup scenarios.
 
-- Hash Table with Separate Chaining
-  Covers operations like:
+### Concepts
+
+- Average lookup/insert/delete is O(1), but worst-case O(n) if collisions are poorly handled.
+- Good hash function is critical for performance.
+- Can handle collisions via separate chaining or open addressing.
+
+### Operations
+
 - Insertion and deletion
 - Key lookup
 - Collision handling
+
+**Tips/Pitfalls**
+
+- Choosing a poor hash function can degrade performance.
+- Use for fast lookup and when key-value mapping is required.
 
 ---
 
 ## Linked Lists
 
-Includes implementations of:
+Sequences of nodes where each node points to the next (and sometimes previous) node.
+Commonly used in memory-efficient data storage, dynamic data structures, and implementing stacks/queues.
 
-- Singly Linked List
-- Doubly Linked List
+### Types
 
-Covers operations like insertion, deletion, search, and reversal.
+- **Singly Linked List** - each node points to the next.
+- **Doubly Linked List** - nodes point to both next and previous nodes.
+
+### Concepts
+
+- Insertion/deletion at head or tail is O(1), searching is O(n).
+- Extra memory needed for pointers compared to arrays.
+
+### Operations
+
+- Insertion and deletion
+- Search
+- Reversal.
+
+**Tips/Pitfalls**
+
+- Great for dynamic datasets where frequent insertion/deletion is needed.
+- Not ideal for random access – use arrays for that.
 
 ---
 
 ## Stacks & Queues
 
-Stack and queue implementations using:
+Linear data structures for managing elements in a specific order.
+
+### Concepts
+
+- **Stacks**: LIFO (Last In, First Out). Used in recursion simulation, undo operations, and parsing.
+- **Queues**: FIFO (First In, First Out). Used in task scheduling, BFS traversal, buffering data streams, and
+  printer/job queues.
+
+### Implementations:
 
 - Python lists
 - Linked lists
 - Queues with Stacks
 
+**Tips/Pitfalls**
+
+- Stacks can cause overflow if too deep recursion.
+- Queues are great for level-order traversal (BFS).
+
 ---
 
 ## Trees
 
-Includes:
+Hierarchical structures where each node can have multiple children but only one parent.
+Commonly used in file systems, databases (B-trees), binary search trees for fast lookup, and hierarchical data
+representation.
+
+### Implementations:
 
 - Binary Trees
 - Binary Search Trees (BST)
@@ -225,13 +297,20 @@ especially efficient for string-related operations like prefix matching or autoc
 - Dictionary word search
 - Word games
 
+**Tips/Pitfalls**
+
+- Unbalanced trees degrade to O(n).
+- Self-balancing trees maintain O(log n) operations automatically.
+
 ---
 
 ## Graphs
 
-Graph implementations using adjacency lists and matrices.
+Structures used to represent relationships between objects, consisting of nodes (vertices) and edges.
+Commonly used in social networks, routing and navigation, network topology, dependency management, game AI &
+pathfinding.
 
-### Types of Graphs
+### Concepts
 
 - Directed
 - Undirected
@@ -246,24 +325,53 @@ Graph implementations using adjacency lists and matrices.
 - Adjacent list
 - Adjacent matrix
 
+_For a reference, check the code implementation._
+
+**Tips/Pitfalls**
+
+- Perfect for scheduling and shortest-path algorithms (Dijkstra).
+- Implemented as arrays for space efficiency.
+
 ---
 
 ## Recursion
 
-Examples:
+Recursion is a programming technique where a function calls itself in order to solve a problem. Instead of solving the
+entire problem at once, the function breaks it down into smaller subproblems of the same type.
+
+### Concepts
+
+- **Base case** – the condition that stops the recursion.
+- **Recursive case** – where the function calls itself to work on a smaller version of the problem.
+
+Recursion is often used in problems like tree/graph traversal, divide-and-conquer algorithms (e.g., quicksort,
+mergesort), and mathematical problems (factorials, Fibonacci numbers).
+
+**Pros**: Elegant and simple for problems with repetitive substructures.
+
+**Cons**: Can lead to high memory usage (stack overflow) if not designed carefully.
+
+Code Examples:
 
 - Factorial
 - Fibonacci
 
 ### 3 rules of building a recursion
 
-1. Identifying the base case
-2. Identifying the recursive case
-3. Returning the value
+1. Identifying the base case - when to stop.
+2. Identifying the recursive case - how the function calls itself.
+3. Returning the value - combine results properly to solve the full problem.
+
+**Tips/Pitfalls**
+
+- Elegant for repetitive substructures.
+- Can cause stack overflow if depth is too large.
 
 ---
 
 ## Sorting Algorithms
+
+Techniques to arrange data in order.
 
 Includes:
 
@@ -274,25 +382,84 @@ Includes:
 - Quick Sort
 - Heap Sort
 
-
 Different sorting algorithms shine in different situations, some are faster on average, while others use less memory or
-are easier to implement.  
+are easier to implement.
 
-To see how each of the most used sorting algorithms works with animations, [click here](https://www.toptal.com/developers/sorting-algorithms).
+To see how each of the most used sorting algorithms works with
+animations, [click here](https://www.toptal.com/developers/sorting-algorithms).
 
 Check out the table below to compare their time and space complexities.
 
 ![Sorting Algorithms Big O Graph](images/sorting_complexity.jpg)
 
+**Tips/Pitfalls**
+
+- Choose algorithm based on data size, memory usage and average vs worst-case performance.
+- Merge Sort & Heap Sort are stable and efficient for large datasets.
+
 ---
 
 ## Searching Algorithms
 
-Includes:
+Searching algorithms are techniques used to find elements in data structures.
+
+Types:
 
 - Linear Search
-- Binary Search (iterative & recursive)
-- Interpolation Search
+- Binary Search
+- Depth First Search
+- Breadth First Search
+
+### Linear Search
+
+Linear Search is the most straightforward searching algorithm. It goes through the list element by element until it
+either finds the target value or reaches the end of the list.
+
+It doesn’t require any special structure or preprocessing of the data, but it’s not efficient for large datasets since
+every element may need to be checked.
+
+### Binary Search
+
+Binary Search is a much more efficient method, but it only works on sorted data. Instead of checking every element, it
+repeatedly splits the search interval in half.
+
+You can think of it as transforming the sorted list into a binary tree:
+
+- Start with the middle element as the “root.”
+- If the target is smaller, move to the left half; if it’s larger, move to the right half.
+- Repeat the process until the element is found or the interval becomes empty.
+
+This divide-and-conquer approach makes Binary Search significantly faster than Linear Search on large, sorted datasets.
+
+### Depth First Search (DFS)
+
+DFS goes deep first — it follows one branch of the tree/graph as far as possible until it either finds the target or
+reaches the end.
+
+When it can’t go any deeper, it backtracks to the nearest ancestor that still has unexplored children and continues the
+search from there.
+
+### Breadth First Search (BFS)
+
+BFS starts from the root and explores level by level. On each level, it goes from left to right, and only after
+finishing the entire level does it move down to the next one.
+
+Unlike DFS, BFS requires extra memory because it needs to keep track of all the nodes at the current level along with
+their children in a queue.
+
+In other words, we need to store every node and its children in order to maintain the correct traversal sequence.
+
+Code Implementation Includes:
+
+- Bredth First Search (iterative and recursive)
+- Depth First Search
+
+**Tips/Pitfalls**
+
+- **Linear Search**: Simple, works on unsorted data, slow for large datasets (O(n)).
+- **Binary Search**: Fast on sorted data (O(log n)), only works if data is sorted.
+- **DFS**: Uses less memory on sparse graphs, can overflow stack on deep recursion.
+- **BFS**: Finds shortest path in unweighted graphs, high memory usage for wide levels.
 
 ---
 
@@ -303,6 +470,11 @@ Solved problems:
 - Fibonacci (Memoization & Tabulation)
 - 0/1 Knapsack
 - Longest Common Subsequence (LCS)
+
+**Tips/Pitfalls**
+
+- Efficient for problems with overlapping subproblems.
+- Requires extra memory, designing recurrence relations can be tricky.
 
 ---
 

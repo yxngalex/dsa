@@ -1,4 +1,4 @@
-from bst_display import display
+from Trees.bst_display import display
 
 
 class Node:
@@ -8,7 +8,7 @@ class Node:
         self.value = value
 
 
-class BSTree:
+class Tree:
     def __init__(self, value=None):
         if value is not None:
             self.root = Node(value) if value is not None else None
@@ -146,7 +146,7 @@ class BSTree:
 
 
 def main():
-    tree = BSTree(9)
+    tree = Tree(9)
     tree.insert(4)
     tree.insert(6)
     tree.insert(20)
