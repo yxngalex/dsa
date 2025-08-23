@@ -310,7 +310,7 @@ Structures used to represent relationships between objects, consisting of nodes 
 Commonly used in social networks, routing and navigation, network topology, dependency management, game AI &
 pathfinding.
 
-### Concepts
+### Types of Graphs:
 
 - Directed
 - Undirected
@@ -451,7 +451,7 @@ In other words, we need to store every node and its children in order to maintai
 
 Code Implementation Includes:
 
-- Bredth First Search (iterative and recursive)
+- Breadth First Search (iterative and recursive)
 - Depth First Search
 
 **Tips/Pitfalls**
