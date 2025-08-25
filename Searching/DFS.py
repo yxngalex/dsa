@@ -19,7 +19,6 @@ def post_order_depth_first_search(tree: Tree):  # TC: O(n) SC: O(h)
 
 
 def in_order(node, lst):
-    print(node.value)
     if node.left:
         in_order(node.left, lst)
     lst.append(node.value)
@@ -29,7 +28,6 @@ def in_order(node, lst):
 
 
 def pre_order(node, lst):
-    print(node.value)
     lst.append(node.value)
     if node.left:
         pre_order(node.left, lst)
@@ -38,7 +36,6 @@ def pre_order(node, lst):
     return lst
 
 def post_order(node, lst):
-    print(node.value)
     if node.left:
         post_order(node.left, lst)
     if node.right:
