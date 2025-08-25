@@ -3,9 +3,6 @@
 from Trees.CustomBinaryTree import Tree
 
 
-#       9
-#   4       20
-# 1    6  15     170
 def breath_first_search(tree: Tree):  # TC: O(n) SC: O(n)
     """
         Perform BFS on a binary tree and return a list of node values in level-order.
@@ -47,12 +44,15 @@ def breath_first_search_recursive(tree: Tree, q=None, lst=None):  # TC: O(n) SC:
     return breath_first_search_recursive(tree, q, lst)
 
 
+#       9
+#   4       20
+# 1    6  15     170
 def main():
     tree = Tree(9)
     tree.insert(4)
     tree.insert(6)
     tree.insert(20)
-    tree.insert(70)
+    tree.insert(170)
     tree.insert(15)
     tree.insert(1)
     print(tree)
