@@ -3,17 +3,17 @@
 from Trees.CustomBinaryTree import Tree
 
 """
-       Perform DFS on a binary tree and return a list of node values in: in-order, pre-order, post-order.
+    Perform DFS on a binary tree and return a list of node values in: in-order, pre-order, post-order.
 
-       Time Complexity: O(n)
-       Space Complexity: O(H)
+    Time Complexity: O(n)
+    Space Complexity: O(H)
 
-       H: being height of the tree
+    H: being height of the tree
 
-       In-order: [1, 4, 6, 9, 15, 20, 170]
-       Pre-order: [9, 4, 1, 6, 20, 15, 170]
-       Post-order: [1, 6, 4, 15, 170, 20, 9]
-   """
+    In-order: [1, 4, 6, 9, 15, 20, 170]
+    Pre-order: [9, 4, 1, 6, 20, 15, 170]
+    Post-order: [1, 6, 4, 15, 170, 20, 9]
+"""
 
 
 def in_order_depth_first_search(tree: Tree):
