@@ -2,19 +2,29 @@
 # (Same as BFS) Usually would be a method of the Tree class, but kept standalone for clarity.
 from Trees.CustomBinaryTree import Tree
 
+"""
+       Perform DFS on a binary tree and return a list of node values in: in-order, pre-order, post-order.
 
-# In-order: [1, 4, 6, 9, 15, 20, 170]
-def in_order_depth_first_search(tree: Tree):  # TC: O(n) SC: O(h)  h being height of the tree
+       Time Complexity: O(n)
+       Space Complexity: O(H)
+
+       H: being height of the tree
+
+       In-order: [1, 4, 6, 9, 15, 20, 170]
+       Pre-order: [9, 4, 1, 6, 20, 15, 170]
+       Post-order: [1, 6, 4, 15, 170, 20, 9]
+   """
+
+
+def in_order_depth_first_search(tree: Tree):
     return in_order(tree.root, [])
 
 
-# Pre-order: [9, 4, 1, 6, 20, 15, 170]
-def pre_order_depth_first_search(tree: Tree):  # TC: O(n) SC: O(h)
+def pre_order_depth_first_search(tree: Tree):
     return pre_order(tree.root, [])
 
 
-# Post-order: [1, 6, 4, 15, 170, 20, 9]
-def post_order_depth_first_search(tree: Tree):  # TC: O(n) SC: O(h)
+def post_order_depth_first_search(tree: Tree):
     return post_order(tree.root, [])
 
 
@@ -35,6 +45,7 @@ def pre_order(node, lst):
         pre_order(node.right, lst)
     return lst
 
+
 def post_order(node, lst):
     if node.left:
         post_order(node.left, lst)
@@ -42,6 +53,7 @@ def post_order(node, lst):
         post_order(node.right, lst)
     lst.append(node.value)
     return lst
+
 
 #       9
 #   4       20
