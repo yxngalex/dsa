@@ -582,6 +582,29 @@ DP is most effective when a problem has:
 
 ---
 
+## More
+
+If you want to read more about certain topics, here are some of the useful links:
+
+- <a href="https://www.techinterviewhandbook.org/algorithms/study-cheatsheet/" target="_blank" rel="noopener noreferrer">
+  Handbook</a>
+- <a href="https://leetcode.com/explore/interview/card/top-interview-questions-easy/" target="_blank" rel="noopener noreferrer">
+  Leetcode Top Interview Questions</a>
+- <a href="https://www.bigocheatsheet.com/" target="_blank" rel="noopener noreferrer">Big O Cheat Sheet</a>
+- <a href="https://github.com/TSiege/Tech-Interview-Cheat-Sheet" target="_blank" rel="noopener noreferrer">Technical
+  Interview Cheat Sheet</a>
+- <a href="https://www.clear.rice.edu/comp160/data_cheat.html" target="_blank" rel="noopener noreferrer">Data Structures
+  Cheat Sheet</a>
+- <a href="https://sinon.org/algorithms//#data-structures" target="_blank" rel="noopener noreferrer">Algorithmic Cheat
+  Sheet</a>
+- <a href="https://www.scribd.com/doc/39557873/Data-Structures-Cheat-Sheet#scribd" target="_blank" rel="noopener noreferrer">
+  More DS Cheat Sheet</a>
+- <a href="https://visualgo.net/en" target="_blank" rel="noopener noreferrer">Visual Algo</a>
+- <a href="http://cooervo.github.io/Algorithms-DataStructures-BigONotation/index.html" target="_blank" rel="noopener noreferrer">
+  Algorithms & DS Notes by cooervo</a>
+
+---
+
 ## How to Run
 
 ```bash
