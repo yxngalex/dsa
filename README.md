@@ -409,6 +409,8 @@ Types:
 - Binary Search
 - Depth First Search
 - Breadth First Search
+- Dijkstra’s Algorithm
+- Bellman-Ford Algorithm
 
 ### Linear Search
 
@@ -449,6 +451,38 @@ their children in a queue.
 
 In other words, we need to store every node and its children in order to maintain the correct traversal sequence.
 
+### Dijkstra’s Algorithm
+
+Dijkstra’s Algorithm is used to find the shortest path from a starting node to all other nodes in a weighted graph with
+**non-negative** edge weights.
+
+Steps:
+
+1. Start from the source node and assign it a distance of 0, while all others are set to infinity.
+2. Pick the node with the smallest known distance and explore its neighbors.
+3. Update the neighbors’ distances if a shorter path is found through the current node.
+4. Repeat until all nodes are visited or the shortest path is found.
+
+It is efficient with a time complexity of **O(N log N)** when using a priority queue, making it widely used in
+routing
+and navigation systems.
+
+[Read more about Dijkstra’s Algorithm here.](https://medium.com/basecs/finding-the-shortest-path-with-a-little-help-from-dijkstra-613149fbdc8e)
+
+### Bellman-Ford Algorithm
+
+The Bellman-Ford Algorithm is another shortest-path algorithm, but unlike Dijkstra, it can handle **negative** edge
+weights.
+
+Steps:
+
+1. Initialize the distance to the source as 0 and all others as infinity.
+2. Relax all edges |V| - 1 times, updating the shortest distances.
+3. If after these iterations an edge can still be relaxed, then a negative weight cycle exists in the graph.
+
+While it is slower than Dijkstra **(O(N^2))**, Bellman-Ford is powerful because it can detect negative cycles and is
+more versatile for certain graph problems.
+
 Code Implementation Includes:
 
 - Breadth First Search (iterative and recursive)
@@ -460,6 +494,9 @@ Code Implementation Includes:
 - **Binary Search**: Fast on sorted data (O(log n)), only works if data is sorted.
 - **DFS**: Uses less memory on sparse graphs, can overflow stack on deep recursion.
 - **BFS**: Finds shortest path in unweighted graphs, high memory usage for wide levels.
+- **Dijkstra’s Algorithm**: Efficient for shortest paths in graphs with non-negative weights, but fails with negative
+  edges.
+- **Bellman-Ford Algorithm**: Handles negative weights and detects negative cycles, but slower than Dijkstra.
 
 ---
 
