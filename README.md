@@ -26,9 +26,9 @@ Common complexities include:
 
 Below are visual resources to help illustrate this concept:
 
-![Big O Graph](images/BigO_Graph.png)
-![Big O Table](images/BigO-table.JPG)
-![Big O Cheatsheet](images/BigO-cheat-sheet.png)
+![Big O Graph](Images/BigO_Graph.png)
+![Big O Table](Images/BigO-table.JPG)
+![Big O Cheatsheet](Images/BigO-cheat-sheet.png)
 
 ---
 
@@ -36,7 +36,7 @@ Below are visual resources to help illustrate this concept:
 
 - Each data structure or algorithm is organized in its own directory.
 - Where applicable, example usage and test files are included.
-- All illustrations are located in the `images/` folder.
+- All illustrations are located in the `Images/` folder.
 
 ---
 
@@ -396,7 +396,7 @@ animations, [click here](https://www.toptal.com/developers/sorting-algorithms).
 
 Check out the table below to compare their time and space complexities.
 
-![Sorting Algorithms Big O Graph](images/sorting_complexity.jpg)
+![Sorting Algorithms Big O Graph](Images/sorting_complexity.jpg)
 
 **Tips/Pitfalls**
 
