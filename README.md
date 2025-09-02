@@ -9,6 +9,15 @@ To check how the implementation works of each data structure, open a Custom(Stru
 
 ---
 
+## Implementation
+
+This project contains practical code implementations for essential data structures and algorithms that every developer
+should know. Each topic includes clear explanations and time complexity analysis for each algorithm and data structure,
+giving you a comprehensive understanding of their performance characteristics and helping you choose the right approach
+for different scenarios.
+
+---
+
 ## Project Structure
 
 - Each data structure or algorithm is organized in its own directory.
@@ -22,6 +31,34 @@ To check how the implementation works of each data structure, open a Custom(Stru
 Each function includes analysis of time and space complexity.
 
 ---
+
+## Quick Navigation
+
+**Big O**
+
+- [Big O Notation](#big-o-notation)
+
+**Data Structures:**
+
+- [Arrays](#arrays)
+- [Hash Tables](#hash-tables)
+- [Linked Lists](#linked-lists)
+- [Stacks & Queues](#stacks--queues)
+- [Trees](#trees)
+- [Graphs](#graphs)
+
+**Other Concepts:**
+
+- [Recursion](#recursion)
+
+**Algorithms:**
+
+- [Sorting Algorithms](#sorting-algorithms)
+- [Searching Algorithms](#searching-algorithms)
+- [Dynamic Programming (DP)](#dynamic-programming-dp)
+
+**Resources**
+- [More Links](#more)
 
 ## Big O Notation
 
