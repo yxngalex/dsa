@@ -500,18 +500,79 @@ Code Implementation Includes:
 
 ---
 
-## Dynamic Programming
+# Dynamic Programming (DP)
 
-Solved problems:
+**Dynamic Programming (DP)** is a problem-solving technique where you break a complex problem into smaller subproblems,
+solve each subproblem once, and store the results so you don’t have to recompute them later.
 
-- Fibonacci (Memoization & Tabulation)
-- 0/1 Knapsack
-- Longest Common Subsequence (LCS)
+DP is most effective when a problem has:
 
-**Tips/Pitfalls**
+1. **Optimal Substructure** – the solution to the larger problem can be built from solutions to smaller subproblems.
+2. **Overlapping Subproblems** – the same subproblems are solved multiple times, so caching their results saves time.
 
-- Efficient for problems with overlapping subproblems.
-- Requires extra memory, designing recurrence relations can be tricky.
+---
+
+## Approaches to Dynamic Programming
+
+### 🔹 Top-Down (Memoization)
+
+- Recursive approach with caching.
+- Solve the problem recursively, and whenever a subproblem is solved, store the result (e.g., in an array or
+  dictionary).
+- When the same subproblem comes up again, return the cached result.
+- **Benefit:** Simple to implement, especially if you already think recursively.
+
+### 🔹 Bottom-Up (Tabulation)
+
+- Iterative approach.
+- Start from the simplest cases and build solutions to larger problems step by step.
+- Typically uses a table (array or matrix) to store intermediate results.
+- **Benefit:** No recursion overhead, usually faster and more memory efficient.
+
+---
+
+## Classic Examples of DP Problems
+
+1. **Fibonacci Sequence**
+    - Naive recursion → **O(2^N)** (very slow).
+    - With DP → **O(N)** time, **O(N)** memory (or **O(1)** if you only keep the last two numbers).
+
+2. **0/1 Knapsack Problem**
+    - Given items with weights and values, maximize value in a knapsack with capacity W.
+    - State: `dp[i][w] = max value using first i items with capacity w`.
+    - **Time Complexity:** O(N·W)
+
+3. **Shortest Path in a Grid**
+    - Find the minimum cost path from top-left to bottom-right in a matrix.
+    - Each cell is computed from the minimum of the cell above and the cell to the left.
+
+4. **Longest Common Subsequence (LCS)**
+    - Find the longest subsequence present in both strings A and B.
+    - State: `dp[i][j] = LCS(A[0..i], B[0..j])`.
+    - **Time Complexity:** O(N·M)
+
+---
+
+## Typical DP Complexities
+
+- **Time:** Often O(N·M) for 2D problems (grids, strings), O(N²)/O(N³) for some graph or sequence problems.
+- **Memory:** Usually matches time complexity, but can sometimes be reduced to O(N) or O(1).
+
+---
+
+## Tips & Common Pitfalls
+
+- **When to use DP:**  
+  If a problem can be broken into smaller subproblems that repeat and combine to form the final solution.
+
+- **Memoization vs. Tabulation:**
+    - Memoization → recursive, easier to code, but may use more memory.
+    - Tabulation → iterative, often faster and memory friendly.
+
+- **Beginner mistakes to avoid:**
+    - Forgetting to define correct base cases.
+    - Overcomplicating state definitions.
+    - Storing unnecessary states when they can be optimized.
 
 ---
 
