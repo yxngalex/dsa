@@ -40,6 +40,12 @@ Below are visual resources to help illustrate this concept:
 
 ---
 
+## Complexity Analysis
+
+Each function includes analysis of time and space complexity.
+
+---
+
 ## Arrays
 
 Collections of elements in contiguous memory allowing fast access by index.
@@ -573,12 +579,6 @@ DP is most effective when a problem has:
     - Forgetting to define correct base cases.
     - Overcomplicating state definitions.
     - Storing unnecessary states when they can be optimized.
-
----
-
-## Complexity Analysis
-
-Each function includes analysis of time and space complexity.
 
 ---
 
