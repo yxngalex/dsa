@@ -9,6 +9,20 @@ To check how the implementation works of each data structure, open a Custom(Stru
 
 ---
 
+## Project Structure
+
+- Each data structure or algorithm is organized in its own directory.
+- Where applicable, example usage and test files are included.
+- All illustrations are located in the `Images/` folder.
+
+---
+
+## Complexity Analysis
+
+Each function includes analysis of time and space complexity.
+
+---
+
 ## Big O Notation
 
 Big O Notation is a way to describe the **performance** or **complexity** of an algorithm. It expresses how the runtime
@@ -29,22 +43,6 @@ Below are visual resources to help illustrate this concept:
 ![Big O Graph](Images/BigO_Graph.png)
 ![Big O Table](Images/BigO-table.JPG)
 ![Big O Cheatsheet](Images/BigO-cheat-sheet.png)
-
----
-
-## Project Structure
-
-- Each data structure or algorithm is organized in its own directory.
-- Where applicable, example usage and test files are included.
-- All illustrations are located in the `Images/` folder.
-
----
-
-## Complexity Analysis
-
-Each function includes analysis of time and space complexity.
-
----
 
 ## Arrays
 
