@@ -1,6 +1,6 @@
 # DFS traversal function.
 # (Same as BFS) Usually would be a method of the Tree class, but kept standalone for clarity.
-from Trees.CustomBinaryTree import Tree
+from Code.Trees.CustomBinaryTree import Tree
 
 """
     Perform DFS on a binary tree and return a list of node values in: in-order, pre-order, post-order.

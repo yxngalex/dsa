@@ -1,4 +1,4 @@
-from Trees.bst_display import display
+from Code.Trees.bst_display import display
 
 
 class Node:

@@ -1,6 +1,6 @@
 # BFS traversal function.
 # Usually would be a method of the Tree class, but kept standalone for clarity.
-from Trees.CustomBinaryTree import Tree
+from Code.Trees.CustomBinaryTree import Tree
 
 
 def breath_first_search(tree: Tree):  # TC: O(n) SC: O(n)

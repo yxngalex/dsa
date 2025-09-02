@@ -1,4 +1,4 @@
-from LinkedLists.CustomLinkedList import LinkedList
+from Code.LinkedLists.CustomLinkedList import LinkedList
 
 
 class CustomMap():
